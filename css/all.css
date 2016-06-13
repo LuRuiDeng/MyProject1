@@ -1,0 +1,106 @@
+﻿@charset "UTF-8";
+@font-face{
+	font-family: "HiraginoSansGB";
+	src: url('../fonts/HiraginoSansGBW3.eot') format('eot');/*IE*/
+	src: url('../fonts/HiraginoSansGBW3.ttf') format('ttf');/*non-IE*/
+}
+@font-face {
+	font-family:"JWaWAZuan";
+	src:url("../fonts/JWaWAZuan.ttf");
+}
+h2,h1,p{
+	font-family: 'HiraginoSansGB';
+	color: rgb(149,149,149);
+}
+ 
+*{
+	margin: 0;
+	padding: 0;
+	border:0;
+}
+body{
+	position: relative;
+	background:rgb(236,236,236);
+	width: 100%;
+	width: 1350px;
+	margin: 0 auto;
+	min-width: 960px;
+	
+}
+a{text-decoration: none;color:rgb(149,149,149);}
+ul,li{list-style: none;}
+/*对布局进行处理、居中、延伸*/
+.navigation,footer{
+	margin:0 auto;
+	}
+.navigation{
+	position: relative;
+	top: 0;
+	height: 65px;
+	width: 1350px;
+	background-color: #151313; 
+	overflow: hidden;
+	z-index: 1;
+	max-width: 1600px;
+	}
+	
+.navigation *{
+  color: #FFFFFF;
+}
+
+.nav-left{
+	position: absolute;
+	width: 200px;
+	left: 17%;
+	top:6px;
+}
+.nav-left p{ font-size: 0.9em; margin-left: -0.9em;margin-top:0.1em; font-family:'HiraginoSansGB'; }
+.navigation ul{ 
+	position: absolute;
+	margin:  5px -50px 0 600px;
+
+}
+.navigation li{float: left;font-size: 1.1em;width: 150px;text-align: center;overflow: hidden;
+	margin-top:15px;font-family:'HiraginoSansGB';}
+
+.navigation li a:hover{
+	color: red;
+}
+.nav-left img{margin-top:5px; }
+.line{
+  position: absolute;
+    width: 100px!important;
+    border-top: 4px solid #E53C3C;
+    left:30px;
+    top: 30px;
+    /*css3*/
+     -webkit-transition: left 0.3s ease-in-out;
+    -moz-transition: left 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out;
+    boder-boxing:border-box;
+
+}
+
+.navigation ul li:nth-child(1):hover~.line{
+    
+    left: 30px;
+}
+.navigation ul li:nth-child(2):hover~.line{
+   
+    left: 180px;
+
+}
+.navigation>ul>li:nth-child(3):hover~.line{
+    
+    left: 330px;
+}
+.navigation>ul>li:nth-child(4):hover~.line{
+     left: 480px;
+}
+/*footer*/
+.footer{width: 100%;height: 70px; text-align: center;background-color: rgb(62,62,62);margin: 0 auto;}
+.footer p{padding-top: 30px;color: rgb(236,236,236);font-size: 10px;}
+.footer a{padding-right: 30px; }
+.footer a:hover{color: red;}
+
+

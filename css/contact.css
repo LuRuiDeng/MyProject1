@@ -1,0 +1,53 @@
+﻿body{overflow-x: hidden;  }
+*{padding: 0;margin: 0;border:0;}
+.line{
+    left:480px;  
+}
+.con-box{width:100%;height: 760px;background-color: #e8e9ed;position: relative; }
+.box-text{position: absolute;left: 140px;top:45px; text-align: center;}
+.box-text p{font-size: 14px;color: #7a6968;line-height: 25px;letter-spacing:3px;margin-top:-10px;}
+#box-Form{width: 730px;height: 480px;position: absolute;left: 50%;top:310px;margin: 0 0 0 -175px;line-height: 1.6;}
+#box-Form p{margin: 20px 0 0 0;  }
+label {display: block;min-width: 140px;font-size: 14px; color: #7a6968; margin-left: 5px; margin-left: 15px;}
+label.error {
+   color: red;
+    display: inline-block;
+    margin: -32px 0 0 20px;
+}
+
+#username,#email{ 
+    font-size: 36px;
+    line-height: 35px;
+    width: 278px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 20px;
+    min-width: 180px;
+    background-color: rgb(65,72,78);
+    color: white;
+    margin: 10px 0 0 0;
+}
+#message{width: 278px;height: 136px; background-color: rgb(65,72,78);   
+    color: white;  font-size: 20px;margin: 10px 0 0 0;  border-radius: 4px;overflow-y:auto;}
+
+
+input.error,textarea.error {
+    border: 1px solid red;
+
+
+}
+
+input[type=submit] {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(239,109,118);
+    border-radius: 25px;
+    margin-top: 20px;
+    font-size: 14px;
+    margin: -45px 0 0 128px;
+
+
+}
+em{color: #E53C3C; }
+.emm{float: left; margin: 65px 7px 0 0; }
